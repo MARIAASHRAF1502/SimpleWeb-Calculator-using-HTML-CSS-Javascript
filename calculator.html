@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family:sans-serif;
+            text-align: center;
+            /* background-color: rgba(107, 106, 105, 0.205); */
+        }
+        body{
+            background-color:rgba(112, 110, 107, 0.171);
+            /* font-family:Calibri; */
+        }
+
+        .main{
+            position:absolute;
+            border:1px solid black;
+            width:fit-content;
+            height:fit-content;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+        }
+        button{
+            padding:10px 24px;
+        }
+        button:hover{
+            background-color: rgb(128, 223, 128);
+            border:1px solid  black;
+        }
+
+        #title{
+            position:absolute;
+            top:20%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            background-color: rgb(128, 223, 128);
+            height: 150px;
+            width:1700px;
+        }
+        p{
+            font-size: 30px;
+        }
+        small{
+            font-size:15px;
+            color:#ffff;
+        }
+        input[type=text]{
+            padding:10px;
+            border-radius:5px;
+            border:0.5px solid black;
+            color:red;
+        }
+
+        button{
+            font-size:15px;
+        }
+
+        small
+        {
+            color:brown;
+            font-weight: bold;
+        }
+   </style>
+
+   <script>
+       var x = document.getElementById
+   </script>
+
+
+</head>
+<body>
+    <div id="title">
+        <p>CALCULATOR<br><small>MARIA ASHRAF J P</small></p>
+        
+    </div>
+    
+    <div class="main">
+        
+        <table border="0">
+            <tr><td colspan="3"><input type="text" id="display"></td><td><button onclick="erase()">C</button></td><td rowspan="6">
+            <button style="padding:100px 20px" onclick="send('AC')">AC</button></td></tr>
+
+            <tr><td><button onclick="send(7)">7</button></td><td><button onclick="send(8)">8</button></td><td><button onclick="send(9)">9</button></td><td><button onclick="send('+')">+</button></td></tr>
+
+            <tr><td><button onclick="send(4)">4</button></td><td><button onclick="send(5)">5</button></td><td><button onclick="send(6)">6</button></td><td><button onclick="send('-')">-</button></td></tr>
+
+            <tr><td><button onclick="send(1)">1</button></td><td><button onclick="send(2)">2</button></td><td><button onclick="send(3)">3</button></td><td><button onclick="send('/')">/</button></td></tr>
+
+            <tr><td><button onclick="send('.')">.</button></td><td><button onclick="send(0)">0</button></td><td><button onclick="send('=')">=</button></td><td><button onclick="send('*')">*</button></td></tr>
+        </table>      
+    </div>
+    <div></div>    
+    <script src="clac_javascript.js"></script>    
+</body>
+</html>
